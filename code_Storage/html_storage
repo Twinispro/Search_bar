@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search Bar</title>
     <link rel="stylesheet" href="style.css">
-    <script id="card-template" type="text/html">
-        <div class="card">
-            <p>Name: {{name}}</p>
-            <p>Price: {{price}}</p>
-        </div>
-    </script>
-    
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <div class="search-wrapper" data-search>
         <label for="search">Search</label>
-        <input type="search" id="search" placeholder="Search for a item">
-        <ul id="searchResults"></ul>
+        <input type="search" id="search">
     </div>
-    <script src="script.js" defer></script>
+
+    <div class="user-cards" data-user-cards-container></div> 
+ <template data-user-template>
+    <div class="card">
+        <div class="header" data-header></div>
+        <div class="body" data-body></div>
+    </div>
+ </template>
+
 </body>
 </html>
