@@ -15,6 +15,8 @@ function addProduct(name, price){
 
 //Function to get all products
 
-function getAllProducts(){
+ function getAllProducts(){
     return products;
 }
+
+export { addProduct, getAllProducts };

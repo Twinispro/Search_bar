@@ -1,8 +1,13 @@
-document.addEventListener('DOMContentLoaded',  function(){
+import { getAllProducts } from "./product.mjs";
+document.addEventListener('DOMContentLoaded', function () {
     const search = document.getElementById('search');
     const searchResults = document.getElementById('searchResults')
     const cardTemplate = document.getElementById('card-template').innerHTML;
 
+    // Intial display of all products
+    const allProducts = getAllProducts();
+    displayResults(allProducts);
+    
     //Event listener when text is place in the search bar
     search.addEventListener('input', function(){
     const searchTerm = search.value.toLowerCase();
