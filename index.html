@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <script id="card-template" type="text/html">
         <div class="card">
-            <p>Name: {{name}}</p>
-            <p>Price: {{price}}</p>
+            <img src="images/{{image}}" alt="{{name}}" class="product-image">
+            <div class="product-info">
+                <p>Name: ${name}</p>
+                <p>Price: ${price}</p>
+            </div>
         </div>
     </script>
     

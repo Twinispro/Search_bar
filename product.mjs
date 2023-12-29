@@ -1,8 +1,8 @@
 const products = [
-        {name: "Bread", price: '$7'},
-        {name: "Cheese", price: '$4'},
-        {name: "Ham", price: '$12'},
-        {name: "Lettuce", price: '$2'}
+        {name: 'Bread', price: '$7', image:'Bread.jpeg'},
+        {name: "Cheese", price: '$4', image:'cheese-slice.jpg'},
+        {name: "Ham", price: '$12', image:'ham.png'},
+        {name: "Lettuce", price: '$2', image:'lettuce.jpg'}
 ]
 
 

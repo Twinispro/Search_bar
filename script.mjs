@@ -26,8 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
         results.forEach(result => {
          const cardHTML = cardTemplate
-         .replace('{{name}}', result.name)
-         .replace('{{price}}', result.price);
+         .replace('${name}', result.name)
+         .replace('${price}', result.price)
+         .replace('{{image}}', result.image);
 
          const card = document.createRange().createContextualFragment(cardHTML).querySelector('.card')
 

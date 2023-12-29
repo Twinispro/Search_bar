@@ -39,3 +39,15 @@ input {
 .hide {
     display:none;
 }
+
+.product-image {
+    display: block;
+    margin:0 auto;
+    max-width:100%;
+    height: auto;
+}
+
+.product-info {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
